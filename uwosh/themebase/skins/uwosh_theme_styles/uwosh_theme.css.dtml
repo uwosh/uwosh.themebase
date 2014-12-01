@@ -1,0 +1,870 @@
+/*
+  *  This is the file where you put your CSS changes. 
+  *  You should preferrably use this and override the 
+  *  relevant properties you want to change here instead 
+  *  of customizing plone.css to survive upgrades. Writing
+  *  your own plone.css only makes sense for very heavy 
+  *  customizations. Useful variables from Plone are 
+  *  documented at the bottom of this file.
+  */
+
+ /* <dtml-with base_properties> (do not remove this :) */
+ /* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
+
+/* fix for IE not seeing tabs for Edit, Contents, Sharing, etc. */
+
+.contentViews li a {
+	background-color:gray;
+}
+
+/*========================================
+     COLOPHON LOGIN AND POWERED BY PLONE LINKS
+   ==========================================*/
+
+.poweredbyplone {
+	display: none;
+	float: right;
+}
+.colophonLogin {
+	float: right;
+	margin-right: 2em;
+	margin-left: 2em;
+}
+.colophonLogout {
+	float: right;
+	margin-right: 2em;
+	margin-left: 2em;
+	background-color:white;
+}
+.colophonLogout a {
+	padding-right:10px;
+	padding-left:10px;
+}
+.copyright {
+	float: left;
+}
+
+/*========================================
+     CHANGE TEXT SIZE NOVELTY TCHOTCHKE
+   ==========================================*/
+
+.large-textNav, .normal-textNav, .small-textNav {
+	padding:0px 2px 0px 2px;
+	width:18px;
+}
+.small-textNav {
+	padding-left:20px;
+}
+.large-textNav a {
+	background-image:url(largeT.gif);
+	background-repeat:no-repeat;
+	overflow:hidden;
+	text-indent:-100em;
+	border:none!important;
+	width:18px;
+}
+.normal-textNav a {
+	background-image:url(medT.gif);
+	background-repeat:no-repeat;
+	overflow:hidden;
+	text-indent:-100em;
+	border:none!important;
+	width:18px;
+}
+.small-textNav a {
+	background-image:url(smallT.gif);
+	background-repeat:no-repeat;
+	overflow:hidden;
+	border:none!important;
+	text-indent:-100em;
+	width:18px;
+}
+
+/*========================================
+   GENERAL
+ ==========================================*/
+
+body {
+	background-image:url(&dtml-portal_url;/background.jpg);
+	background-repeat:no-repeat;
+	background-position:center top;
+	background-color:#d79a27;
+	padding-top:38px;
+}
+#visual-portal-wrapper {
+	width:940px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url(&dtml-portal_url;/backgroundStrip.gif);
+	background-position:center;
+	background-repeat:repeat-y;
+}
+#portal-top {
+}
+#content a.external-link {
+	background-image:none;
+	padding:0px;
+}
+.documentAuthor {
+	display:none;
+}
+
+/*========================================
+   TOP LEVEL NAVIGATION
+ ==========================================*/
+
+#top_level_navigation {
+	display:inline;
+	width:100%;
+	float:left;
+	text-align:center;
+	background-image:url(&dtml-portal_url;/background.jpg);
+	background-attachment:fixed;
+	background-position:top center;
+	margin-top:-30px;
+}
+#top_level_navigation ul {
+	display:inline-block;
+	/*float:left;*/
+ 	text-align:center;
+	width:100%;
+	padding-top:5px;
+	margin:0px;
+	width:880px;
+	background-image:url(&dtml-portal_url;/siteActionsBak.jpg);
+	background-repeat:repeat-x;
+	background-position:top;
+	background-color:#717173;
+}
+#top_level_navigation ul li {
+	float:left;
+	list-style-type:none;
+}
+#top_level_navigation ul li a {
+	padding:2px 10px 2px 10px;
+	display:block;
+	border-right:solid 1px #999999;
+	color:#ffffff;
+	border-bottom:none;
+	text-decoration:none;
+}
+#top_level_navigation ul li {
+	float:left;
+	list-style-type:none;
+}
+#portal-top .titan_servicesNav {
+	float:right;
+	margin-right:10px;
+	background-image:url(&dtml-portal_url;/titanServicesBak.jpg);
+}
+#portal-top .titan_servicesNav a {
+	border-right:none;
+}
+
+/*=========================================
+    Titan Services
+============================================*/
+
+#titanServicesLinks {
+	display:none;
+	position:absolute;
+	z-index:300;
+	background-image:URL(75transCool.png);
+}
+#titanServicesLinks ul {
+	width:150px;
+	background-image: none;
+	background-color:transparent!important;
+	border:solid 1px grey
+}
+#titanServicesLinks ul li {
+	float: none;
+	text-align:left;
+	padding:0px;
+	margin:0px;
+}
+#titanServicesLinks ul li a:hover {
+	background-color:grey;
+}
+
+/*========================================
+   SEARCH
+ ==========================================*/
+
+.searchResults dd {
+	margin-bottom:0px;
+}
+.searchResults dt a {
+	color:#cc660b!important;
+	font-size:.9em;
+}
+.searchResults dt a.state-private {
+	color:red!important;
+}
+.searchResults .documentByLine {
+	color:black!important;
+}
+.cse-overlay {
+	z-index:2;
+}
+/*LIVESEARCH*/
+ul.LSTable li:last-child {
+	border-bottom:solid grey 1px
+}
+li.LSRow {
+	float:none!important;
+	display:block!important;
+	padding:3px!important;
+	margin:0px;
+}
+li.LSRow a {
+	float:left;
+	margin-right:10px;
+	color:#cc660b!important;
+}
+li.LSRow a[href="search_form"] {
+	color:grey!important;
+	padding:5px 0px!important;
+}
+li.LSRow img {
+	display:none;
+}
+.LSRow div.discreet {
+	white-space:nowrap;
+	padding-left:0px!important;
+}
+/*SEARCH NO JAVA*/
+
+#googleSearch {
+	width:450px;
+	height:1200px;
+	border:0px;
+}
+
+/*========================================
+   CUSTOM UWO BANNER
+ ==========================================*/
+
+#uwosh_banner_body {
+	position:relative;
+	clear:left;
+}
+#uwosh_logo {
+	position:absolute;
+	top:7px;
+	left:30px;
+	clear:both;
+}
+
+/*========================================
+   AUDIENCE NAV
+ ==========================================*/
+
+#audienceNav {
+	background-image:url(&dtml-portal_url;/audienceBak.jpg);
+	background-repeat:repeat-x;
+	padding-left:232px;
+	border:10px solid white;
+	height:4em;
+	background-color:#fec425;
+	padding-bottom:10px;
+}
+#audienceNav ul {
+	float:left;
+	margin:0px;
+}
+#audienceNav ul li {
+	list-style-type:none;
+	float:left;
+	padding: 13px 8px 13px 8px;
+	margin:0px;
+}
+#audienceNav ul li a {
+	font-family:"Arial";
+	/*font-weight:bold;
+
+letter-spacing:0em;
+*/
+        font-size:1.10em;
+	display:block;
+	color:#363636;
+	padding: 2px 3px 1px 3px;
+	text-decoration:none;
+}
+#audienceNav ul li a:hover {
+	text-decoration: underline;
+}
+#audienceNav ul li.selected a {
+	background-color:#666;
+	color:white;
+	text-decoration: none;
+}
+#audienceNav ul li.selected a:hover {
+	text-decoration: none;
+}
+
+/* google search */ 
+#google-searchbox input.inputLabelActive {
+	border:1px solid #8CACBB;
+}
+#google-searchbox, #portal-searchbox {
+	background-color:transparent;
+	clear:right;
+	float:right;
+	margin:5px 0px;
+	padding:0 2em 0 0;
+	text-align:right;
+	text-transform:lowercase;
+	white-space:nowrap;
+	z-index:2;
+}
+.LSBox .searchButton, #google-searchbox input.gsc-search-button {
+	text-transform:uppercase;
+	background-image:url(&dtml-portal_url;/titanServicesBak.jpg);
+	background-repeat:repeat-x;
+	background-position:center;
+	color:white;
+	padding:2px;
+	border:none;
+}
+
+#google-searchbox input.gsc-search-button { 
+  font-size: 10px; 
+  font-weight: normal; 
+  padding: 0; 
+  margin: 0 0 0 5px; 
+} 
+ 
+#google-searchbox .gsc-control-cse{ 
+  border: none; 
+  background-color: transparent; 
+  width: 180px; 
+  padding:0; 
+} 
+ 
+#google-searchbox input.gsc-input{ 
+  font-size: 11px; 
+} 
+ 
+#google-searchbox .gsc-clear-button{ 
+  display:none; 
+}
+
+
+/*========================================
+   COLUMNS
+ ==========================================*/
+
+table#portal-columns {
+	border-collapse:collapse;
+	margin:0px!important;
+	padding:0px!important;
+	border:none;
+}
+td#portal-column-one {
+	background-color:transparent;
+	margin:0px;
+	padding:0px;
+	padding-left: 30px;
+	display:inline-block;
+}
+td#portal-column-content {
+	margin-left:20px;
+}
+#portal-column-one .visualPadding {
+	width:206px;
+	padding:0px;
+	margin:0px;
+}
+#portal-column-one {
+	vertical-align: top;
+	border-collapse: collapse;
+}
+#portal-column-one .portlet {
+	width:182px;
+}
+#portal-column-one dl {
+	margin-left:10px;
+}
+#portal-column-one dt {
+	padding-top:24px;
+}
+#portal-column-one ul ul {
+	margin-left:10px;
+}
+#portal-column-one ul ul li {
+	margin-bottom:0px;
+}
+#portal-column-one ul ul li a {
+	border:none;
+}
+#portal-column-content {
+	background-color:transparent;
+	vertical-align: top;
+	border-collapse: collapse;
+}
+#portal-column-two {
+	vertical-align: top;
+	width: 16em;
+	border-collapse: collapse;
+	padding: 0;
+}
+#portal-column-two .portletStaticText {
+	margin-left:5px;
+	width:95%;
+}
+/* fullscreen */
+body.fullscreen #portal-column-one,  body.fullscreen #portal-column-two {
+	display: none;
+}
+body.fullscreen #portal-column-content {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+div.managePortletsLink {
+	display:block;
+	margin-left:7px;
+	padding-left:10px;
+	width:148px;
+}
+
+/*========================================
+   PORTLETS GENERAL
+ ==========================================*/
+
+.portletWrapper {
+	width:192px;
+	margin-left:7px;
+	background-color:white;
+}
+.portlet {
+	width:192px;
+	padding:0px!important;
+	margin:0px;
+}
+dt.portletHeader a.tile, dt.portletHeader {
+	color:#cc660b;
+	text-decoration:none;
+}
+dt.portletHeader {
+	font-weight:bold;
+	text-transform:uppercase;
+	border-bottom:dotted 1px #999999;
+}
+.portlet dd {
+	margin:0px;
+	line-height:12px;
+}
+.portlet dd {
+	padding:5px;
+	line-height:12px;
+}
+.portlet dd a {
+	text-decoration:none;
+}
+#portal-column-two .portletWrapper {
+	width:158px;
+}
+#portal-column-two .actionPortlet {
+	width:158px;
+}
+
+/*========================================
+   CALENDAR
+ ==========================================*/
+
+table.ploneCalendar {
+	padding-left:10px;
+	width:100%;
+}
+dt.portletHeader {
+	padding-left:10px;
+}
+
+/*========================================
+   CALL TO ACTION PORTLET
+ ==========================================*/
+
+.actionPortlet {
+	position:relative;
+	background-color:#EDECDA;
+	display:inline-block;
+}
+div .actionPortlet {
+	width:192px;
+}
+.actionPortlet ul {
+	margin:0px;
+	padding:0px;
+}
+.actionPortlet ul li {
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	height:61px;
+	min-height:61px;
+}
+.actionPortlet li a {
+	color:#ffffff;
+	display:block;
+	text-decoration:none;
+	padding:10px 7px 10px 7px;
+	font-weight:bold;
+	line-height:1.3em;
+}
+.actionPortlet li.even {
+	background-image:url(&dtml-portal_url;/callToActionBlue.jpg);
+	background-repeat:repeat-x;
+	background-color:#69bad9;
+}
+.actionPortlet li.odd {
+	background-image:url(&dtml-portal_url;/callToActionGrey.jpg);
+	background-repeat:repeat-x;
+	background-color:#575757;
+}
+
+/*========================================
+   NORMAL NAVIGATION
+ ==========================================*/
+
+.portletNavigationTree img, .portletCollection img, .portletRecent img {
+	display:none;
+}
+.portletNavigationTree ul {
+	margin-left:0px;
+	padding-left:0px;
+}
+.portletNavigationTree dd li {
+	list-style-type:none;
+}
+.portletNavigationTree dd li a {
+	border-bottom:1px dotted #999999;
+	display:block;
+	color:#575757!important;
+}
+ul li.navTreeCurrentNode div a span {
+	color:#69bad9;
+}
+ul li.navTreeCurrentNode li div a span {
+	color:#666666;
+}
+
+/*========================================
+   PORTLET EVENTS/NEWS
+ ==========================================*/
+
+.portletFooter {
+	border:0px;
+}
+.portletEvents li {
+	border-bottom:dotted 1px #575757;
+}
+.portletEvents .portletItem a, .portletNews .portletItem a {
+	color:#575757;
+	display:block;
+	border-bottom:dotted 1px #575757;
+}
+.portletEvents .even {
+	background-color:transparent;
+}
+
+/*====================================
+SECONDARY PAGE RIGHT SIDE PORTLETS
+======================================*/
+
+#portal-column-two ul li {
+	list-style-type:none;
+}
+table#portal-columns td#portal-column-two {
+	padding-right:20px;
+	background-repeat:repeat-y;
+	background-position:right;
+}
+#portal-column-two .visualPadding {
+	margin-left:0;
+	margin-top:50px;
+	padding:0;
+	width:145px;
+}
+#portal-column-two .visualPadding div {
+	padding-bottom:10px;
+	background-color:white;
+}
+#portal-column-two .visualPadding div dl dt.portletHeader {
+	margin-right:15px;
+}
+#portal-column-two ul {
+	padding:0px;
+	margin:0px;
+}
+#portal-column-two dl {
+	width:158px;
+}
+
+/*========================================
+   MAINPAGE
+ ==========================================*/
+ 
+.section-front-page h1.documentFirstHeading,  .section-front-page .documentDescription {
+	display:none;
+}
+
+/*========================================
+   CONTENT
+ ==========================================*/
+
+#content {
+	background-color:transparent;
+}
+#content a {
+	background-image:none!important;
+	padding:0px!important;
+}
+.documentContent {
+	background-color:transparent;
+}
+#content h1 {
+	line-height:26px;
+	border:none;
+}
+#content h2 {
+	color:#cc660b;
+}
+#content p {
+	color:#575757;
+	line-height:18px;
+	margin-bottom:8px;
+}
+#content .documentActions {
+	text-align:center;
+	margin-top:20px;
+}
+#content .documentActions li {
+	background-color:#edecda;
+}
+.documentActions {
+	border:none;
+}
+#portal-column-content table td {
+	vertical-align:top;
+}
+/*REQUIRED FIELD COLOR - should be same as background color for screenreaders*/
+
+.fieldRequired {
+	color:#EDECDA!important;
+}
+/*========================================
+   FLASH
+ ==========================================*/
+ /* this is so that the flash image thing does not
+		show up when page is initially loading.
+		Doesn't work because I can't target the image
+		when it is only being displayed and not edited.
+		Is there a way to do this?
+*/
+		
+img.flashElement {
+	display:none;
+}
+.kupu img.flashElement {
+	display:block;
+}
+
+/*====================================
+   BREADCRUMBS
+ ======================================*/
+
+div #portal-breadcrumbs {
+	border:medium none;
+	padding:0;
+}
+#breadcrumbs-you-are-here {
+	display:none;
+}
+#breadcrumbs-you-are-here {
+	display:none;
+}
+
+/*========================================
+   FOOTER
+ ==========================================*/
+
+#uwoshFooter {
+	background-image:url(&dtml-portal_url;/footerBak.gif);
+	background-position:top;
+	background-repeat:no-repeat;
+	background-color:white!important;
+	float:left;
+	width:940px;
+	padding-top:50px;
+	padding-bottom:20px;
+}
+ul#footerMap:first-child {
+	margin-left:60px;
+}
+.footerMap {
+	float:left;
+	width:130px;
+	margin:0px;
+}
+.footerMap li {
+	list-style-type:none;
+	margin:1px;
+}
+.footerMap li a {
+	text-decoration:none;
+	color:#666666;
+}
+#resources table {
+	text-align:center;
+	width:300px;
+	margin-right:10px;
+	float:right;
+}
+#resources img {
+	padding-bottom:5px;
+}
+.footerMap .small-textMap, .footerMap .normal-textMap, .footerMap .large-textMap {
+	display:none;
+}
+
+/*========================================
+   COLOPHON
+ ==========================================*/
+
+.colophonWrapper {
+	background-image:url(&dtml-portal_url;/gold.gif);
+	clear:both;
+	padding-top:10px;
+	text-align:left;
+	padding-left:55px;
+	background-color:#d79a27;
+	padding-bottom:30px;
+}
+#portal-colophon {
+	margin-bottom:0px;
+	padding-bottom:0px;
+}
+#portal-colophon .colophonWrapper a {
+	color:#666666;
+	text-decoration:none;
+	border-bottom:none;
+	padding: 10px;
+}
+.footerMap {
+	margin-left:20px;
+}
+
+/*========================================
+   LOGIN
+ ==========================================*/
+
+#login-form {
+	width: 40em;
+	margin: 0 auto;
+}
+#forgotten-password {
+	float: right;
+	width: 50%;
+	margin: 0 1em;
+}
+div #forgotten-password {
+	width:50%;
+	margin-right:10px
+}
+#forgotten-password p {
+}
+
+/*========================================
+   PERSONAL BAR
+ ==========================================*/
+
+ul#portal-personaltools {
+margin:0px 10px;
+border:none;
+padding:2px;
+background-image:url(audienceBak.jpg);
+background-color:#f8bd25;
+background-position:top;
+}
+ul#portal-personaltools a {
+color:black;
+}
+
+ /* </dtml-with> */
+
+ /* DOCUMENTATION ON PRE-DEFINED PROPERTIES FROM PLONE */
+
+  /* You can insert colors and other variables from Plone's 
+     base_properties by doing:
+
+     & dtml-variableName ; (without the spaces, excluded here to not make it render)
+
+     Example:
+
+     myLink {
+         color: & dtml-fontColor ;   (again, without the spaces)
+     }
+
+    This means you can generate your own elements that use Plone's defaults,
+    and respect any customizations people have done. See base_properties for
+    the default values.
+
+    These are the available properties:
+
+    logoName - the file name of the portal logo
+
+    fontFamily - the font family used for all text that is not headers
+
+    fontBaseSize - the base font size that everything is calculated from
+
+    fontColor - the main font color
+
+    fontSmallSize - used for various elements like buttons and discreet text
+
+    discreetColor - the font color of discreet text
+
+    backgroundColor - the background color 
+
+    linkColor - the color used on normal links
+
+    linkActiveColor - color used on active links
+
+    linkVisitedColor - color used on visited links
+
+    borderWidth - the width of most borders in Plone
+
+    borderStyle - the style of the border lines, normally solid
+
+    borderStyleAnnotations - style of border lines on comments etc
+
+    globalBorderColor - the border color used on the main tabs, the portlets etc
+
+    globalBackgroundColor - background color for the selected tabs, portlet headings etc
+
+    globalFontColor - the color of the font in the tabs and in portlet headings
+
+    headingFontFamily - font family for h1/h2/h3/h4/h5/h6 headlines
+
+    contentViewBorderColor - the content view tabs border color
+
+    contentViewBackgroundColor - the content view tabs background color
+
+    contentViewFontColor - the font color used in the content view tabs
+
+    inputFontColor - the font color used for input elements
+
+    textTransform - whether to lowercase text in portlets, tabs etc.
+
+    evenRowBackgroundColor - the background color of even rows in listings
+
+    oddRowBackgroundColor - the background color of even rows in listings
+
+    notifyBorderColor - border color of notification elements like the status message, the calendar focus
+
+    notifyBackgroundColor - background color of notification elements like the status message, the calendar focus
+
+    helpBackgroundColor - background color of information pop-ups (currently not used)
+
+  */

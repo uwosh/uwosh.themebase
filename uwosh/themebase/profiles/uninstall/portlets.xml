@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<portlets>
+
+ <!-- Portlet type registrations -->
+
+    <portlet
+        addview="uwosh.themebase.calltoaction"
+        title="Call To Action"
+        description="A portlet that shows call to action links"
+        remove="True"
+    />
+
+</portlets>

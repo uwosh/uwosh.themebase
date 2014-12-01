@@ -1,0 +1,175 @@
+History
+=======
+
+2.2 - 2013-10-21 [tkimnguyen]
+-----------------------------
+
+* tweaking banner image functionality: in portalheader; added generic
+  alt text
+
+
+2.2b1 - 2013-10-17 [tkimnguyen]
+-------------------------------
+
+* readded banner image functionality
+
+
+2.1 - 2013-03-29 [tkimnguyen]
+-----------------------------
+
+* Finished adding the rest of the new UW Oshkosh theme elements (CSS,
+  JS, templates, viewlets)
+
+
+2.0.6 - 2013-02-15 [tkimnguyen]
+-------------------------------
+
+* fixed two bugs in footer code
+
+
+2.0.5 - 2013-02-15 [tkimnguyen]
+-------------------------------
+
+* added stripped down uwosh footer viewlet
+
+
+2.0.4 - 2013-02-12 [tkimnguyen]
+-------------------------------
+
+* removed more references to old uwosh_tools
+
+* added some missing properties
+
+* removed old customized login_form.pt
+
+
+2.0.3 - 2013-02-12 [tkimnguyen]
+-------------------------------
+
+* removed reference to old uwosh_tools
+
+
+2.0.2 - 2013-02-08 [tkimnguyen]
+-------------------------------
+
+* added missing registration for uwosh_theme.css
+
+
+2.0.1 - 2013-02-08 [tkimnguyen]
+-------------------------------
+
+* added top_level_nav and titan_services portal_actions folders and actions
+
+* added uwosh_home_url property
+
+* set top_level_nav viewlet order 
+
+
+2.0 - 2013-02-08
+----------------
+
+* slimmed down version for new look; has just the old top level navigation
+  viewlet [tkimnguyen]
+
+
+1.2.0 - unreleased
+------------------
+
+* update google search code 
+ 	XXX Updates CSS/JS so you also need to re-cook on install
+ 	[vangheem]
+
+
+1.2.3 - 2011-07-11
+------------------
+
+* Explicit ZCML <include> of permissions.zcml to work with Plone
+  4.1rc3 [nguyen]
+
+
+1.2.2 - 2011-06-17
+------------------
+
+* ZCML tweak to work with Plone 4.1rc3 [nguyen]
+
+
+1.2.1
+-----
+
+Re-exposes site map, accessibility, and contact site actions in footer.
+
+
+1.2
+---
+
+* works with Plone 4.0.1 now (uses classic theme and layers)
+
+* uses uwosh_help_url property now instead of "help_url"
+
+* added "get help" user portal_action (appears in personal_bar)
+
+* added "get help" link at bottom of page, next to "log in"
+
+* make visible the undo portal_action 
+
+* custom settings for nav portlet (level 0, title)
+
+
+1.1.3
+-----
+
+* added "get help" link at bottom of page; gets the URL from a property "help_url"
+  in uwosh_tools, otherwise defaults to http://www.uwosh.edu/ploneprojects/help 
+
+1.1.2
+-----
+
+* add metadata to css dtml files
+
+
+1.1.1
+-----
+
+* do not hide all images in portlets
+
+1.1
+---
+
+* updates how it handles dependencies
+
+
+1.0
+---
+
+* in login_form added link to more things to try, tweaked CSS
+  [Kim Nguyen]
+
+* fix for IE not seeing tabs for Edit, Contents, Sharing, etc.
+  [Kim Nguyen]
+
+* combined the login form bits
+  [Kim Nguyen]
+
+* calltoactions now offer the option to open in a new window
+  [Joshua Klotz]
+
+* new workmark and logos; sdist and upload commands
+  [Kim Nguyen]
+
+* change login portlet's "forgot password?" link to point to our
+  already-customized login_form rather than the mail_password_form
+  [Kim Nguyen]
+
+* IE fixes
+
+* various other things that are too many to list...
+
+
+0.3
+-------------------------------------
+
+* Removed Emergency Notification stuff
+  [Nathan Van Gheem]
+
+* removed some site properties
+  [Nathan Van Gheem]

@@ -1,0 +1,85 @@
+<div id="uwosh_banner_body">
+	<div id="uwosh_logo">
+		<a tal:attributes="href python:getattr(context, 'uwosh_home_url', 'http://www.uwosh.edu/home'"><img tal:attributes="src string: ${here/portal_url}/logo.png"></a>
+	</div>
+	<div id="audienceNav">
+		<ul>
+			<tal:actions tal:repeat="action view/audience_navigation">
+        <li tal:attributes="class python: view.selected(action['url']) and action['id'] + 'AudienceNav' + ' selected' or action['id'] + 'AudienceNav'" >
+            <a href=""
+               tal:attributes="href action/url;"
+							 tal:content="action/title"
+            ></a>
+        </li>
+    	</tal:actions>
+		</ul>
+
+<!--Search -->
+<div id="google-searchbox" 
+	 class="uwosh-searchbox"
+	 tal:attributes="style python: (not view.search_campus and 'display:none') or ''">
+<script> 
+  (function() { 
+    var cx = '016914008736719096284:eascmls-b2u'; 
+    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; 
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + 
+        '//www.google.com/cse/cse.js?cx=' + cx; 
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); 
+  })(); 
+</script> 
+<gcse:search></gcse:search>
+
+<div class="search-site"> 
+  <input id="portal-searchbox-checkbox-campus" class="noborder"
+         type="checkbox" checked="true" name="search_entire_campus" />
+  <label for="portal-searchbox-checkbox-campus" style="cursor: pointer">
+    search entire campus
+  </label>
+</div>
+
+</div>
+	<div 
+		id="portal-searchbox" 
+		class="uwosh-searchbox" 
+		tal:attributes="style python: (view.search_campus and 'display:none') or ''"
+		i18n:domain="plone">
+		
+		<form name="searchform"
+			id="searchbox_016914008736719096284:eascmls-b2u"
+			action="uwosh-search"
+			tal:attributes="action string:${view/site_url}/uwosh-search">
+
+			<label for="searchGadget" class="hiddenStructure" i18n:translate="text_search">
+				Search Site
+			</label>
+
+			<div class="LSBox">
+				<input 
+					name="SearchableText" type="text" size="18" value="" title="Search Site"
+					accesskey="4" i18n:attributes="title title_search_site;"
+					tal:attributes="value request/SearchableText|nothing;
+									id view/search_input_id"
+					class="inputLabel" 
+				/>
+
+				<input class="searchButton" type="submit" value="Search" i18n:attributes="value label_search;" />
+				<div class="searchSection">
+          <input id="portal-searchbox-checkbox-site" class="noborder"
+                 type="checkbox" name="search_entire_campus" />
+          <label for="portal-searchbox-checkbox-site" style="cursor: pointer">
+            search entire campus
+          </label>
+				</div>
+				<div class="LSResult" id="LSResult" style="">
+					<div class="LSShadow" id="LSShadow">
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+		
+</div>
+
+<!-- END Search -->
+
+</div>

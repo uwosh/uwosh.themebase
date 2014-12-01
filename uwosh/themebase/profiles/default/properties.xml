@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<site>
+ <property name="email_from_name" 
+ 	type="string">UW Oshkosh Site</property>
+ <property name="email_from_address" 
+ 	type="string">plone-help@lists.uwosh.edu</property>
+ <property name="copyright_holder"
+    type="string">The Board of Regents of the University of Wisconsin System</property>
+ <property name="uwosh_home_url"
+    type="string">http://www.uwosh.edu/home</property>
+ <property name="uwosh_help_url" 
+ 	type="string">http://www.uwosh.edu/ploneprojects/help</property>
+</site>

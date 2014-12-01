@@ -1,0 +1,45 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="uwosh.themebase">
+		
+	<include package=".viewlets" />
+
+	<include package="Products.CMFCore" file="permissions.zcml" />
+
+<!-- 	<browser:resource
+		name="uwosh-theme-base-config.png"
+		file="applications-graphics.png"
+		/>
+	
+	<adapter factory=".controlpanel.ThemeControlPanelAdapter" />
+	<browser:page
+		name="uwosh.themebase.configuration"
+		for="*"
+		class=".controlpanel.UWOshThemeConfigurationForm"
+		layer="uwosh.themebase.browser.interfaces.IUWOshThemeLayer"
+		permission="cmf.ManagePortal"
+		/>
+
+	<browser:page
+	  	for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+	  	name="uwosh-theme-base-manage-links"
+	  	class=".managelinks.ManageLinks"
+			permission="cmf.ManagePortal"
+			layer="uwosh.themebase.browser.interfaces.IUWOshThemeLayer"
+	  />
+	<browser:page
+	  	for="*"
+	  	name="uwosh-search"
+	  	class=".uwoshsearch.UWOshSearch"
+		permission="zope2.View"
+		layer="uwosh.themebase.browser.interfaces.IUWOshThemeLayer"
+	  />
+
+	<browser:resource
+		file="pngie6fix.js"
+		name="uwosh.themebase.pngie6fix.js"
+		layer=".interfaces.IUWOshThemeLayer"
+	/>
+ -->	
+</configure>

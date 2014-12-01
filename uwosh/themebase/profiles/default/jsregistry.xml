@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<object name="portal_javascripts">
+<!--  	<javascript 
+		cacheable="True" compression="none" cookable="True"
+    	enabled="True" expression="python:'MSIE 6' in here.REQUEST['HTTP_USER_AGENT']" 
+		id="++resource++uwosh.themebase.pngie6fix.js" inline="False"
+	/>
+ --> 	<javascript 
+		cacheable="True" compression="none" cookable="True"
+    	enabled="True"
+		id="uwosh.js" inline="False"
+	/>
+	
+ <!-- change this to only use if the user is logged in... saves 40k on download -->
+ 	<javascript cacheable="True" compression="none" cookable="True"
+    	enabled="True" expression="python: not here.restrictedTraverse('@@plone_portal_state').anonymous()" 
+		id="++resource++base2-dom-fp.js" inline="False"
+	/>
+</object>

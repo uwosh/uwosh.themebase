@@ -1,0 +1,128 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      metal:use-macro="here/prefs_main_template/macros/master"
+      i18n:domain="plone">
+
+<body>
+
+<div metal:fill-slot="prefs_configlet_main">
+    
+<p>If you want more fine tuning of these links, you'll need to visit the zmi
+	<a tal:attributes="href string:${portal_url}/portal_actions/manage">here</a>.
+</p>
+
+<form class="inlineDisplay" method="POST" tal:attributes="action string:${context/absolute_url}/@@uwosh-theme-base-manage-links">
+	<div id="selectPortalAction" tal:condition="view/select_portal_action">
+		<h1 class="documentFirstHeading"
+        i18n:translate="title_manage_contentrules">Manage Links</h1>
+
+    <a href=""
+       class="link-parent"
+       tal:attributes="href string:$portal_url/plone_control_panel"
+       i18n:translate="label_up_to_plone_setup">
+    Up to Site Setup
+    </a>
+		<ul>
+			<tal:pa tal:repeat="action view/portal_actions">
+			<li tal:define="action_title python: action[0];
+										  action_id python: action[1]">
+				<a tal:content="action_title" tal:attributes="href string:${portal_url}/uwosh-theme-base-manage-links?action_id=${action_id}" />
+			</li>
+			</tal:pa>
+		</ul>
+		
+	</div>
+	
+	<div id="selectPortalLink" tal:condition="view/select_portal_link">
+		
+		<h1 class="documentFirstHeading"
+        i18n:translate="title_manage_contentrules">Select link to edit</h1>
+
+    <a href=""
+       class="link-parent"
+       tal:attributes="href string:$portal_url/uwosh-theme-base-manage-links"
+       i18n:translate="label_up_to_plone_setup">
+    Up to Manage Links
+    </a>
+		
+		<ul>
+			<tal:pa tal:repeat="link view/get_links">
+			<li>
+				<a tal:content="link/title" tal:attributes="href string:${portal_url}/uwosh-theme-base-manage-links?action_id=${request/action_id}&link_id=${link/id}" />
+			</li>
+			</tal:pa>
+		</ul>
+		
+	</div>
+	
+	<div id="editLink" tal:condition="view/edit_link">
+		
+		<h1 class="documentFirstHeading"
+        i18n:translate="title_manage_contentrules">Edit link</h1>
+
+    <a href=""
+       class="link-parent"
+       tal:attributes="href string:${portal_url}/uwosh-theme-base-manage-links?action_id=${request/action_id}"
+			 tal:content="string: Up to ${request/action_id}">
+    Up to Manage Links
+    </a>
+		
+		<form tal:define="link view/get_link" 
+					class="inlineDisplay" 
+					method="POST" 
+					tal:attributes="action string:${context/absolute_url}/uwosh-theme-base-manage-links">
+			<input type="hidden" name="action_id" tal:attributes="value request/action_id" />
+			<input type="hidden" name="link_id" tal:attributes="value request/link_id" />
+			
+			<div class="field">
+				<label for="form.title">Title</label>
+				<div class="formHelp">
+					This is what will show up on the link.
+        </div>
+					<input 
+						style="width:300px"
+						id="form.title" 
+						type="text" 
+						width="300" 
+						name="form.title"
+						tal:attributes="value python: link.getProperty('title')" />
+      </div>
+			<div class="field" tal:define="url_expr python: link.getProperty('url_expr');
+																		 url python: url_expr[url_expr.find(':')+1:].strip()">
+				<label for="form.url">URL</label>
+				<div class="formHelp">
+					This actual link as to where this should point.
+        </div>
+					<input 
+						id="form.url" 
+						type="text" 
+						style="width:300px"
+						width="300" 
+						name="form.url"
+						tal:attributes="value url" />
+      </div>
+			<div class="field">
+				<label for="form.visible">Visible</label>
+				<div class="formHelp">
+					Should this link be displayed?
+        </div>
+					<input 
+						id="form.visible" 
+						type="checkbox" 
+						name="form.visible"
+						tal:attributes="checked python: link.getProperty('visible')" />
+      </div>
+			
+			<input 
+				class="context save" 
+				type="submit" 
+				value="Save Link" 
+				name="form.button.saveLink"/>
+			
+		</form>
+	</div>
+</form>
+</div>
+</body>
+</html>
+

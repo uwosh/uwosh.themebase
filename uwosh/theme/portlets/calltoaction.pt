@@ -1,0 +1,9 @@
+<div class="actionPortlet">
+  <ul>
+		<tal:actions tal:repeat="action view/call_to_actions">
+		<li tal:attributes="class python: repeat['action'].odd() and 'odd' or 'even'">
+			<a href="" tal:attributes="href python: len(action) > 1 and action[1]" tal:content="structure python: len(action) > 0 and action[0]" />
+    </li>
+		</tal:actions>
+  </ul>
+</div>

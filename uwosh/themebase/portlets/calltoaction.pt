@@ -1,0 +1,15 @@
+<div class="actionPortlet">
+  <ul>
+	<tal:actions tal:repeat="action view/call_to_actions">
+	<li tal:attributes="class python: repeat['action'].odd() and 'odd' or 'even'">
+	<tal:block tal:condition="exists:python:action[2]">
+	<a tal:condition="python: action[2] == 'on'" tal:attributes="href python: len(action) > 1 and action[1]" tal:content="structure python: len(action) > 0 and action[0]" target="_blank" />
+	<a tal:condition="python: action[2] != 'on'" tal:attributes="href python: len(action) > 1 and action[1]" tal:content="structure python: len(action) > 0 and action[0]" />
+	</tal:block>
+	<tal:block tal:condition="not:exists:python:action[2]">
+	<a tal:attributes="href python: len(action) > 1 and action[1]" tal:content="structure python: len(action) > 0 and action[0]" />
+	</tal:block>
+   	</li>
+	</tal:actions>
+  </ul>
+</div>

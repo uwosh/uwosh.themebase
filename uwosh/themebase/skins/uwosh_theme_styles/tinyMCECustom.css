@@ -1,0 +1,12 @@
+  /* =============================  
+    EDIT MODE CSS CUSTOMIZATION
+============================= */
+
+
+.mceContentBody th.innerShadow a:before  {
+    -moz-box-shadow:none !important;
+    -webkit-box-shadow:none !important;
+    box-shadow:none !important;
+display:none!important;
+
+}

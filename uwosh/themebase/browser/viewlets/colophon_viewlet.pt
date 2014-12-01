@@ -1,0 +1,60 @@
+<div id="portal-colophon" metal:define-macro="colophon" i18n:domain="plone">
+      <tal:comment replace="nothing">
+
+        Please keep the Plone Powered link (or the plone_powered.gif image) if you use
+        Plone on your site. It's a nice token of gratitude, and we appreciate your
+        help in promoting the Plone brand.
+
+        Plone is powered by the combined forces of Zope and CMF, two absolutely
+        great systems made by Zope Corporation (http://zope.com) and they in turn
+        are based on the best programming language in the world - Python
+        (http://www.python.org). We owe these guys a lot, thanks for making Plone
+        possible!
+
+      </tal:comment>
+
+      <metal:slot define-slot="colophon" />
+
+      <div class="colophonWrapper">
+
+	<div class="copyright">
+	  <p>Copyright <span tal:replace="view/current_year">[Copyright Year]</span> 
+	  <span tal:replace="view/copyright_holder">[Copyright Holder]</span>
+	  </p>
+	</div>
+
+	<div class="poweredbyplone">
+	  <a href="http://plone.org"
+             title="This site was built using Plone CMS, the Open Source Content Management System. Click for more information."
+             i18n:attributes="title title_built_with_plone;"
+             i18n:translate="label_powered_by_plone">
+            Powered by Plone</a>
+	</div>
+
+	<div class="colophonLogin" tal:condition="context/@@plone_portal_state/anonymous">
+	  <a id="site_action_sitemap" href="sitemap">site map</a>
+	  <a id="site_action_accessibility" href="accessibility-info">accessibility</a>
+	  <a id="site_action_contact" href="contact-info">contact</a>
+	  <a tal:attributes="href python:view.help_url or 'http://www.uwosh.edu/ploneprojects/help'">get help</a>
+	  <a tal:attributes="href string:${view/site_url}/login_form">log in</a>
+	</div>
+
+	<div class="colophonLogout" tal:condition="not: context/@@plone_portal_state/anonymous">
+	  <tal:hasEmergInstalled tal:condition="view/simple_emergency_installed">
+	    <tal:canEdit tal:condition="view/can_edit_simple_emergency">
+	      <a tal:attributes="href string:${view/site_url}/@@uwosh.simpleemergency.configuration">emergency</a>
+	    </tal:canEdit>
+	  </tal:hasEmergInstalled>
+	  <tal:hasManagerRole tal:condition="view/has_manager_role">
+		<a tal:attributes="href string:${view/site_url}/plone_control_panel">site setup</a>
+	  </tal:hasManagerRole>
+	  <a id="site_action_sitemap" href="sitemap">site map</a>
+	  <a id="site_action_accessibility" href="accessibility-info">accessibility</a>
+	  <a id="site_action_contact" href="contact-info">contact</a>
+	  <a tal:attributes="href python:view.help_url or 'http://www.uwosh.edu/ploneprojects/help'">get help</a>
+	  <a tal:attributes="href string:${view/site_url}/logout">log out</a>
+	</div>
+
+      </div>
+
+    </div>

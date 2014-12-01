@@ -1,0 +1,69 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="uwosh.themebase">
+
+<!-- 	<browser:viewlet
+		name="uwosh.themebase.banner"
+		manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+		class=".banner.Banner"
+		layer="uwosh.themebase.browser.interfaces.IUWOshThemeLayer"
+		permission="zope2.View" />
+ -->
+
+	<browser:viewlet
+		name="uwosh.themebase.footer"
+		manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+		class=".footer.Footer"
+		layer="uwosh.themebase.browser.interfaces.IUWOshThemeLayer"
+		permission="zope2.View" />
+
+<!--	<browser:viewlet
+		name="uwosh.themebase.colophon"
+		manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+		layer="uwosh.themebase.browser.interfaces.IUWOshThemeLayer"
+		class=".colophon.Colophon"
+		template="colophon_viewlet.pt"
+		permission="zope2.View" />
+ -->
+
+	<browser:viewlet
+		name="uwosh.themebase.mainimage"
+		manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+		layer="uwosh.themebase.browser.interfaces.IUWOshThemeLayer"
+		class=".mainimage.MainImage"
+		permission="zope2.View" />
+
+	<browser:viewlet
+		name="uwosh.themebase.toplevelnav"
+		manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+		layer="uwosh.themebase.browser.interfaces.IUWOshThemeLayer"
+		class=".toplevelnav.TopLevelNav"
+		permission="zope2.View" />
+		
+	<browser:viewlet
+	    name="plone.logo"
+	    manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+	    class="plone.app.layout.viewlets.common.LogoViewlet"
+	    template="logo.pt"
+	    layer="..interfaces.IUWOshThemeLayer"
+	    permission="zope2.View"
+	    />
+
+		<!-- Moved viewlet registration -->
+<!-- 	<browser:viewlet
+		name="uwosh.themebase.path_bar"
+		manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+		class=".pathbar.PathBar"
+		permission="zope2.View"
+		layer="uwosh.themebase.browser.interfaces.IUWOshThemeLayer"
+	/>
+	<browser:viewlet
+		name="uwosh.themebase.documentbyline"
+		manager="plone.app.layout.viewlets.interfaces.IBelowContent"
+		class="plone.app.layout.viewlets.content.DocumentBylineViewlet"
+		permission="zope2.View"
+		layer="uwosh.themebase.browser.interfaces.IUWOshThemeLayer"
+	/>
+ -->
+</configure>

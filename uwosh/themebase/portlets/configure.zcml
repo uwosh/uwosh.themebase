@@ -1,0 +1,24 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+		xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="uwosh.themebase">
+
+	<include package="plone.app.portlets" file="permissions.zcml" />
+
+<!-- 	<plone:portlet
+	    name="uwosh.themebase.calltoaction"
+	    interface=".calltoaction.ICallToAction"
+	    assignment=".calltoaction.Assignment"
+	    view_permission="zope2.View"
+	    edit_permission="plone.app.portlets.ManagePortlets"
+	    renderer=".calltoaction.Renderer"
+	    addview=".calltoaction.AddForm"
+	    editview=".calltoaction.EditForm"
+	    />
+	<plone:portletRenderer
+		portlet="plone.app.portlets.portlets.login.ILoginPortlet"
+		layer="uwosh.themebase.browser.interfaces.IUWOshThemeLayer"
+		class=".login.Renderer"
+	/>
+ -->	
+</configure>

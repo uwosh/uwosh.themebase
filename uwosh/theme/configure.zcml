@@ -1,0 +1,13 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    i18n_domain="uowsh.theme">
+
+<!-- #XXX Legacy!!! Remove at your own risk!!! -->
+
+	<five:registerPackage package="." initialize=".initialize" />
+
+ 	<include package=".browser" />
+	
+</configure>

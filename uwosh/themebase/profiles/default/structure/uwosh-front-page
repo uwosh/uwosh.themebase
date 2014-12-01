@@ -1,0 +1,31 @@
+id: uwosh-front-page
+title: Welcome to Plone
+excludeFromNav: False
+subject: 
+description: Welcome to your new Plone site
+contributors: 
+effectiveDate: None
+expirationDate: None
+language: 
+rights: 
+creation_date: 2009/10/16 14:28:30 US/Central
+modification_date: 2009/10/16 14:28:30 US/Central
+relatedItems: 
+allowDiscussion: None
+Content-Type: text/html
+
+<p>Welcome to your new web site!</p>
+<h2>Getting Plone Help at UW Oshkosh</h2>
+<p>For help using Plone, training, and support, please see the UW Oshkosh Plone Projects web site at <a class="external-link" href="http://uwosh.edu/plone">http://uwosh.edu/plone</a>.</p>
+<p>A sampling of resources we have available at <a class="external-link" href="http://uwosh.edu/plone">http://uwosh.edu/plone</a>:</p>
+<ul><li>We have a <a class="external-link" href="mailto:plone-help@lists.uwosh.edu">plone-help@lists.uwosh.edu </a>mailing list where you can contact us with any questions or problems you might have in using your new web site.</li><li>You can also find us in the "plone" chat room if you use the <a class="external-link" href="http://im.uwosh.edu">UW Oshkosh instant messaging service</a>.</li><li>There are many <a class="external-link" href="http://uwosh.edu/ploneprojects/documentation/how-tos">"how to" documents </a>and you can <a class="external-link" href="http://uwosh.edu/ploneprojects/documentation/how-tos/how-tos/RSS">subscribe to an RSS feed</a> to find out when new ones are available (they come out frequently).</li><li>We hold weekly Plone "confabs" where all Plone users and site owners are welcome to join us to work together on or ask questions about any Plone project or issue you may have. &nbsp;You can see our <a class="external-link" href="http://uwosh.edu/ploneprojects/events">events listing</a> or subscribe to the <a class="external-link" href="http://uwosh.edu/ploneprojects/events/RSS">RSS feed</a>.</li><li>Much more, so please visit <a class="external-link" href="http://uwosh.edu/plone">http://uwosh.edu/plone</a>!</li></ul>
+<h2>More Help on Generic Plone</h2>
+<p>If you need more information on Plone in general (as opposed to Plone at UW Oshkosh), the following are at the Plone web site (<a class="external-link" href="http://plone.org">http://plone.org</a>):</p>
+<ul><li>Read the <a class="link-plain" href="http://plone.org/documentation" target="_blank">documentation</a>, especially the 
+        <a class="link-plain" href="http://plone.org/documentation/how-to/read-documentation" target="_blank">What documentation should I read</a> 
+        and 
+        <a class="link-plain" href="http://plone.org/documentation/faq/server-recommendations" target="_blank">Server setup recommendations</a>.</li><li>Explore the <a class="link-plain" href="http://plone.org/products" target="_blank">available add-on products</a> for Plone.</li><li>Read and/or subscribe to the <a class="link-plain" href="http://plone.org/support" target="_blank">support forums</a>.</li></ul>
+<h2>How to Get Started With Your New Site</h2>
+<p>Here are things you can do to get going with your new site:</p>
+<ul><li>Log in (the "log in" link is at the bottom right of the page). &nbsp;Once you've logged in, <em><strong>you may have to reload your browser page </strong></em>to see the new Edit, etc. tabs.</li><li>Replace the default banner image (the image between the gold "audience nav" and the blue "title bar" above). &nbsp;Integrated Marketing and Communications (IMC) can help you with this (see their <a class="external-link" href="http://uwosh.edu:80/imc">web site</a> or contact <a class="external-link" href="mailto:herzigj@uwosh.edu">Jeff Herzig</a> directly). &nbsp;Or, you can place any image you want into the <a title="main-images" class="internal-link" href="main-images">"main-images" folder</a> here as long as its size matches that of the default banner image. &nbsp;Any images in the "main-images" folder will be displayed randomly whenever the page is reloaded.</li><li>Consider how you'll want to organize your new site into folders (and possibly subfolders), and go ahead and create those folders. &nbsp;They will automatically appear in the site navigation portlet on the left side of every page.</li><li>Consider who you'll want to have editing content on your site. &nbsp;See <a class="external-link" href="http://uwosh.edu:80/ploneprojects/documentation/how-tos/how-to-grant-permissions-on-a-folder-to-a-group-of-users">how to create the necessary groups and assign editing permissions</a> to those groups.</li><li>Refresh your knowledge of Plone by attending more training classes. &nbsp;See the <a class="external-link" href="http://uwosh.edu:80/training">IT training web site</a> or contact <a class="external-link" href="mailto:loker@uwosh.edu">Michelle Loker</a> directly.</li><li>Come join us at our weekly Plone confabs (see above for more info on the confabs).</li><li>When you are ready to replace this default front page, <a class="external-link" href=".createNewFrontPage">click here</a>. &nbsp;This page will be renamed "help" and a new mostly-empty front page will be created for you. &nbsp;If you need to find this help page again, just use the Search field at the top of every page and search for "help".</li></ul>
+<p>&nbsp;</p>

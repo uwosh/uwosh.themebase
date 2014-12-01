@@ -1,0 +1,21 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="uwosh.themebase">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="uwosh.themebase"
+      directory="profiles/default"
+      description='Provides basic look additions that every uwosh plone site must have.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+  <genericsetup:registerProfile
+        name="uninstall"
+        title="uwosh.themebase Uninstall Profile"
+        directory="profiles/uninstall"
+        description="Removes uwosh.themebase."
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        />
+</configure>

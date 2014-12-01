@@ -1,0 +1,46 @@
+#portal-searchbox {
+margin-top:10px !important;
+}
+
+table.audienceNav {
+margin-right:35px!important;
+line-height: 1 !important;
+background-color:#791533 !important;
+text-align:center !important
+}
+
+table.audienceNav td {
+padding-top:20px !important;
+padding-right:10px !important;
+padding-left:10px !important;
+padding-bottom:20px !important;
+}
+
+table.audienceNav {
+background-color:#791533 !important;
+}
+
+table.audienceNav + table.audienceNav {
+background-color:#febd25 !important;
+}
+
+table.audienceNav + table.audienceNav + table.audienceNav {
+background-color:#f89829 !important;
+}
+
+table + table.audienceNav + table.audienceNav + table.audienceNav{
+background-color:#b14118 !important;
+}
+
+#starLogo {
+width: 400px !important;
+height: 400px !important;
+}
+
+#starLogo img {
+width:400px !important
+}
+
+#portlets-below {
+margin-top:30px !important;
+}

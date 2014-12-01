@@ -1,0 +1,57 @@
+<div metal:define-macro="portal_footer"
+     i18n:domain="plone"
+     id="uwoshFooter">
+<div id="footer">
+        <div id="uwo-footer">
+            <div id="footer-column-1">
+                <h2>Site Map</h2>
+                <ul>
+                    <li><a href="http://www.uwosh.edu/home/accessibility-info">Accessibility</a></li>
+                    <li><a href="http://www.uwosh.edu/alumni">Alumni</a></li>
+                    <li><a href="http://www.uwosh.edu/career">Career Services</a></li>
+                    <li><a href="http://www.uwosh.edu/home/community-and-visitors">Community/Visitors</a></li>
+                    <li><a href="http://www.uwosh.edu/home/contact-us">Contact Us</a></li>
+                    <li><a href="http://www.uwosh.edu/home/current-students">Current Students</a></li>
+                </ul>
+                <ul>
+                    <li><a href="http://www.uwosh.edu/home/faculty-staff">Faculty and Staff</a></li>
+                    <li><a href="http://www.uwosh.edu/home/future-students">Future Students</a></li>
+                    <li><a href="http://www.uwosh.edu/foundation">Give to UW Oshkosh</a></li>
+                    <li><a href="http://www.uwosh.edu/imc/media-relations/newsroom">Media Relations</a></li>
+                    <li><a href="http://www.uwosh.edu/home/parents-and-family">Parents</a></li>
+                    <li><a href="http://www.uwosh.edu/hr/employment">Work at UW Oshkosh</a></li>
+                </ul>
+            </div><!-- End #footer-column-1 -->
+            <div id="footer-column-2">
+                <h2>Connect on the UWO Network</h2>
+                <a href="http://www.facebook.com/uwoshkosh"><img class="uwo-connect-icons" src="fb-footer.png"></a>
+                <a href="http://www.flickr.com/uwoshkosh"><img class="uwo-connect-icons" src="fl-footer.png"></a>
+                <a href="http://www.foursquare.com/uwoshkosh"><img class="uwo-connect-icons" src="fs-footer.png"></a>
+                <a href="http://www.twitter.com/uwoshkosh"><img class="uwo-connect-icons" src="t-footer.png"></a>
+                <a href="http://www.youtube.com/uwosh"><img class="uwo-connect-icons" src="yt-footer.png"></a>
+                <div id="uwo-everywhere">
+                    <a href="http://www.uwosh.edu/go/mobile"><img src="app-footer.png" id="uwo-footer-mobile-icon"></a>
+                    <h2><a href="http://www.uwosh.edu/go/mobile">UWO Everywhere You Go</a></h2>
+                    <p><a href="http://www.uwosh.edu/go/mobile">Download the UWO mobile app.</a></p>
+                </div>
+                <h2 id="meet-uw-oshkosh">Meet UW Oshkosh</h2>
+                <p><a href="http://www.uwosh.edu/faces">Check out profiles of the campus community.</a></p>
+            </div><!-- End #footer-column-2 -->
+            <div id="footer-column-3">
+                <img src="map-footer.png" id="uwo-footer-map">
+            </div><!-- End #footer-column-3 -->
+            <div id="footer-logos">
+                <a href="http://www.ncahlc.org/?option=com_directory&amp;Action=ShowBasic&amp;instid=2030" style="text-decoration: none;" target="_blank"><img src="http://qs1016.pair.com/~hlc2/MOA/?id=53adaf494dc89ef7196d73636eb2451b" alt="Higher Learning Commission Mark of Affiliation" style="width: 77px; height: 85px;" /></a>
+                <a href="http://www.uwosh.edu/home/about-uw-oshkosh/about-uw-oshkosh/the-college-portrait" target="_blank">
+                    <img src="cp-footer.png"></a>
+                <a href="http://www.wisconsin.edu/" target="_blank">
+                    <img src="uw-footer.png"></a>
+            </div><!-- End #footer-logos -->
+            <div id="uwo-tagline">
+                <h2>UW Oshkosh. Where Excellence and Opportunity Meet.</h2>
+                <p>University of Wisconsin Oshkosh :: 800 Algoma Blvd., Oshkosh, WI 54901 :: (920) 424-1234</p>
+            </div><!-- End #uwo-tagline -->
+        </div><!-- End #uwo-footer -->
+    </div><!-- End #footer -->
+
+</div>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<object name="portal_skins"
+        meta_type="Plone Skins Tool"
+        allow_any="False"
+        cookie_persistence="False"
+        request_varname="plone_skin">
+
+ <object name="uwosh_theme_styles"
+    meta_type="Filesystem Directory View"
+    directory="uwosh.themebase:skins/uwosh_theme_styles"/>
+
+ <object name="uwosh_theme_custom_images"
+    meta_type="Filesystem Directory View"
+    directory="uwosh.themebase:skins/uwosh_theme_custom_images"/>
+	
+	<object name="uwosh_theme_custom_templates"
+	    meta_type="Filesystem Directory View"
+	    directory="uwosh.themebase:skins/uwosh_theme_custom_templates"/>
+	
+ <skin-path name="Sunburst Theme">
+	<layer name="uwosh_theme_styles"
+		insert-after="custom"/>
+	<layer name="uwosh_theme_custom_images"
+		insert-after="uwosh_theme_styles"/>
+	<layer name="uwosh_theme_custom_templates"
+		insert-after="uwosh_theme_custom_images"/>	
+ </skin-path>
+
+</object>

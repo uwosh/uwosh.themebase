@@ -1,0 +1,1264 @@
+/* - mediaqueries.css - */
+/* For devices with narrow screens, phones, tablets, etc. */
+/*  * 1625px and above huge screens * */
+/*  * 600px and below-common things for 480px, 600px, and below .. IE 9 ignored this if it had 'only screen' in the query   * */
+/*  * iPad in landscape mode * */
+/*  * iPad in portrait mode * */
+/*  * iPhone in landscape mode * */
+/*  * iPhone in portrait mode * */
+
+/*  *  1625px and above huge screens * */
+@media screen and (min-width : 1625px)  {
+ body { 
+
+    }
+
+    
+    /* for readability making the width of the site only got to 100em */ 
+#visual-portal-wrapper {
+    width:1000px !important;
+    margin: 0px auto !important;
+    display: block;
+    float: none;
+    }
+
+
+
+} /*  *  END 1625px and above huge screens * */
+
+
+@media screen and (max-width : 992px) { 
+    
+
+}
+
+
+/*========================================== 
+                 *  977px and below *
+/*========================================== */
+
+@media screen and (max-width : 977px) {
+    
+#visual-portal-wrapper {
+    width:750px !important;
+    overflow:hidden;
+
+    }
+
+
+/* =============================  
+    TOP NAV 977
+============================= */ 
+
+#top_level_navigation button{
+   -webkit-border-bottom-right-radius: 10px;
+   -webkit-border-bottom-left-radius: 10px;
+   -moz-border-radius-bottomright: 10px;
+   -moz-border-radius-bottomleft: 10px;
+   border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+   position:relative;
+   padding:10px 10px;
+   background-color:white;
+   border:solid 0px;
+   margin-bottom:10px;
+   
+}
+   
+.top-navigation-button {
+     height:30px;
+     position:relative !important;
+}
+
+ul#topNav {
+    display: none !important;    
+}
+
+#top_level_navigation button {
+    display:inline !important;
+    padding-bottom:20px !important;
+}
+
+ul#topNav.expanded  {
+    display: block !important;
+    width:100%;    
+}
+
+ul#topNav.expanded #titanServicesLink {
+    background-color:black !important;
+    padding-bottom:10px !important;
+
+}
+
+#top_level_navigation {
+    text-align:center !important;
+    padding:0px !important; 
+    
+}
+
+#top_level_navigation {
+    min-width:0 !important;
+    background-color:black !important;
+    
+}
+
+#top_level_navigation ul li {
+   border:none ;
+   padding:0px !important;
+
+}
+  
+#top_level_navigation ul li a {
+   display:block;
+   border-bottom:solid #3d3d3d 1px;
+   text-align:center;
+   padding:20px 0px !important;
+   background-color:black !important;
+  
+}
+  
+#top_level_navigation ul li ul a{
+  background-color:transparent !important;
+}
+
+#top_level_navigation ul li a:hover {
+    background-color:lightgrey !important;
+}
+
+
+ul li#titanServicesLink.titan_servicesNav {
+    width:100%;
+    display:block !important;
+   
+}
+
+ul#titanServicesLinks li:first-child a:after {
+    left: 50% !important;
+    margin-left:-5px !important;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #444;
+ 
+}
+
+#titanServicesLinks  {
+    display:static !important;
+    z-index:300 !important;
+    width:100% !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
+    margin-top:10px;
+    background-color:black !important;
+   
+}
+
+#top_level_navigation ul:first-child li a:first-child {
+    display:block !important;
+   
+}
+  
+
+li#titanServicesLink.titan_servicesNav:after {
+    background-position:center center !important;
+   
+}
+  
+#top_level_navigation ul ul {
+    margin-top:29px;
+}
+
+ul#titanServicesLinks li:first-child a {
+
+   
+}
+
+/* =============================  
+    HEADER 977
+============================= */ 
+    
+div#logo {
+    margin-left:-770px !important;
+    height:auto !important;
+    width:auto !important; 
+     
+    }
+    
+    
+#header {
+   font-size:1.8em !important;
+    top:70px !important;
+    left:220px !important;
+    }
+    
+/* =============================  
+    GLOBAL NAV 977
+============================= */ 
+
+    
+#portal-globalnav li {
+    z-index:11 !important;
+   
+}
+    
+#portal-column-content {
+   
+}
+
+/* =============================  
+    SEARCH & RESULTS 977
+============================= */   
+
+#searchGadget {
+    
+    
+        }
+      
+.nav-menu .nav-primary{
+   overflow: visible;
+
+}
+   
+#LSResult.LSResult {
+   /*display:block !important;*/
+    z-index:2323 !important;
+    position:relative;
+    width:90% !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    left:0% !important;
+       
+}
+
+#LSResult.LSResult li {
+    display:list-item !important;
+    width:100%
+}
+
+#LSResult.LSResult li a {
+    border-bottom:none !important;
+    padding:20px 20px 0px 20px !important;
+    color:navy;
+    font-weight:bold;
+    
+}
+
+#LSResult.LSResult li div.LSDescr {
+    padding-left:20px;
+    padding-right:20px;
+    border-bottom:solid 1px lightgrey !important; 
+    padding-bottom:20px;
+    color:#040404;
+}
+
+#LSResult.LSResult li.LSRow a{
+    border-bottom:none !important
+}
+
+.nav-menu .nav-primary .LSBox li.LSRow  {
+    text-align:left !important;
+    margin:0px !important;
+    padding:0px !important;
+    background-color:#f4f4f4 !important;
+    width:100%;
+    border:none !important;
+
+}
+
+.nav-menu .nav-primary .LSBox li.LSRow a {
+    border:0px !important;
+ 
+}
+ 
+
+/* =============================  
+    FOOTER 977
+============================= */
+
+#portal-footer-wrapper {
+    width:100% !important;
+
+}
+
+ul#portal-siteactions {
+    background-color:#f8f8f8
+}
+
+#footer-column-3 {
+    display:none;
+}
+
+#footer-column-1, #footer-column-2 {
+    width:50% !important;
+}
+
+#uwo-everywhere img {
+    position:relative;
+    right:55px !important;
+    margin:0px!important;
+}
+
+}
+
+
+/*========================================== 
+                 815 px and below 
+========================================== */
+@media screen and (max-width : 799px) {
+     
+.actionMenu.deactivated {
+    display:none !important
+}
+
+/* ==================================  
+    RESPONSIVE STUFF FOR TOP NAV 815
+================================== */
+
+ul#topNav {
+    display: none !important;
+    
+}
+
+ul#topNav.expanded {
+    display: block !important;
+}
+
+    
+ul#titanServicesLinks  li{
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+
+
+button.navigation-button {
+    width: 100%; 
+    font-size: 1em !important; 
+    border: 1px solid darkgrey;
+    background-color: #f4f4f4;
+    color: #4f4f4f;
+   -webkit-border-radius: 1px !important;
+     -moz-border-radius: 1px !important;
+     border-radius: 1px !important;
+     margin: 30px 0px 0px 0px;
+     height: 50px;
+    
+ }
+ 
+
+/* =============================  
+    SEARCH 815
+============================= */
+
+#portal-searchbox {
+    width:98%;
+    top:210px !important;
+    left:10px;
+    z-index:2
+
+}
+
+#searchGadget {
+        font-size:1.2em;
+    
+}
+
+/* =============================  
+    GLOBAL NAV 815
+============================= */
+
+button.navigation-button {
+    margin:0px !important;
+  
+}
+
+.nav-primary {
+    
+}
+
+#portal-globalnav {
+    background-image:none !important;
+    padding-top:0px !important;
+    z-index:200 !important;
+    position:relative;
+
+}
+
+#portal-globalnav li ul {
+    display:none !important;
+}
+
+#portal-globalnav li {
+    text-align:center;
+   
+}
+
+#portal-globalnav li a {
+    display:block
+}
+
+
+.nav-menu .nav-primary.expanded #portal-globalnav li {
+    width:100% !important;
+    margin:0% !important;
+    background-color:#f4f4f4 !important; 
+
+ 
+}
+
+
+.nav-primary #portal-globalnav li a {
+   border-bottom:solid 1px lightgrey !important;
+   padding:20px !important;
+   margin:0px !important;
+
+    }
+    
+/* =============================  
+    PORTAL COLUMNS & CONTENT 815
+============================= */
+ 
+ #portal-columns {
+    top:0px;
+    padding-top:50px;
+
+}
+
+#portal-breadcrumbs {
+    display:none !important;
+}
+
+#portal-column-content {
+    border:none !important;
+    margin-top:-40px;
+}
+
+#content{
+    border:none !important;
+}
+
+div.documentEditable {
+    margin-top:40px !important
+}
+
+
+
+/* =============================  
+    FOOTER 815
+============================= */
+
+#footer {
+    width:100% !important
+}
+
+#footer-column-1 {
+    width:50% !important;
+    
+}
+#footer-column-2 {
+    width:50% !important;
+}
+
+#uwo-everywhere img {
+    right:85px !important;
+
+}
+    
+}
+
+/*========================================== 
+                  770px and below 
+========================================== */
+
+@media screen and (max-width : 770px) {
+    
+    
+/* ================================  
+    TIMESLOT TABLE RESPONSIVE 770
+================================ */ 
+h2.colspan-table-head {
+    font-family:arial !important;
+    font-style:normal !important;
+    font-weight:bold !important;
+    padding:5px 5px 10px 5px;
+    border-top:solid 1px lightgrey;
+    border-right:solid 1px lightgrey;
+    border-left:solid 1px lightgrey;
+    margin-bottom:10px;
+    background: #eeeeee; /* Old browsers */
+    background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+table#uwoshTimeslotSignupSheet, 
+table#uwoshTimeslotSignupSheet thead, 
+table#uwoshTimeslotSignupSheet tbody, 
+table#uwoshTimeslotSignupSheet th, 
+table#uwoshTimeslotSignupSheet td, 
+table#uwoshTimeslotSignupSheet tr {
+    display:block;
+}
+
+table#uwoshTimeslotSignupSheet th {
+    display:none
+}
+
+
+
+table#uwoshTimeslotSignupSheet td:nth-of-type(6) {
+    margin-bottom:30px;
+    text-align:left !important
+}
+
+
+
+
+/* ================================  
+    ANY TABLE RESPONSIVE 770
+================================ */ 
+
+#content table,
+#content thead, 
+#content tbody,  
+#content td, 
+#content tr {
+    display:block
+}
+
+#content table tr:first-child {
+    display:none !important
+}
+
+#content th {
+    display:none;
+}
+
+#content table td:nth-of-type(1){
+    background-color:#f4f4f4;
+}
+
+
+
+#content table td:last-child {
+    margin-bottom:20px;
+}
+
+#content table td .td-table-head {
+    font-weight:bold
+}
+
+#content table td .td-table-head:after {
+    content:': ';
+}
+    
+#visual-portal-wrapper {
+        width:510px !important;              
+    }
+/* =============================  
+    HEADER 770
+============================= */
+
+div#logo {
+    margin-left:-530px !important;
+    height:auto !important;
+    width:auto !important   
+    } 
+    
+#header {
+    font-size:1.5em !important;
+    top:30px !important;
+    left:215px !important;
+    
+    } 
+    
+#portal-breadcrumbs {
+    display:none;
+}
+
+/* =============================  
+    SEARCH 770
+============================= */ 
+
+#portal-searchbox {
+    top:210px !important;
+}
+
+/* =============================  
+    TOP NAV 770
+============================= */ 
+    
+#top_level_navigation {
+    text-align:center !important;
+    padding:0px !important; 
+}
+
+#top_level_navigation button{
+   -webkit-border-bottom-right-radius: 10px;
+   -webkit-border-bottom-left-radius: 10px;
+   -moz-border-radius-bottomright: 10px;
+   -moz-border-radius-bottomleft: 10px;
+   border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+   position:relative;
+   padding:5px 10px;
+   background-color:white;
+   border:solid 0px;
+   margin-bottom:10px;
+   
+}
+   
+.top-navigation-button {
+     height:30px;
+     position:relative !important;
+ 
+}
+
+/* =============================  
+    PORTAL COLUMNS 770
+============================= */ 
+
+#portal-column-content {
+    margin-top:-40px !important;
+    border:none !important;
+    padding-top:0px !important
+}
+
+  
+      /* move columns to below main content */    
+#portal-column-two, #portal-column-one {
+        clear: both;
+        margin-left: -99% !important;
+        width: 100% !important;
+        margin:1em 0px;
+        width: 95% !important;
+} 
+        
+    /* spread out the content */
+div#portal-column-content {
+        width: 94%;
+        margin-left: -99%;
+}
+        
+dl#portal-personaltools {
+        margin-right: 34px;
+        float: right;
+}
+
+/* =============================  
+    FOOTER 770
+============================= */ 
+    
+
+#footer-column-1{
+        width: 100% !important;
+        
+}
+#footer-column-2 {
+        margin-bottom: 20px !important;
+        width:100% !important;
+}
+    
+#uwo-everywhere img {
+    right:215px !important;
+
+}
+
+
+}
+
+
+/*========================================== 
+                  600px and below 
+========================================== */
+/*  * 600px and below-common things for 480px, 600px, and below .. IE 9 ignored this if it had 'only screen' in the query * */
+@media screen and (max-width: 610px) {
+    /* reset the min width to be 320px */
+
+
+/*RESPONSIVE STUFF FOR TOP NAV*/
+
+
+
+ul#topNav {
+    display: none !important;
+}
+
+ul#topNav.expanded {
+    display: block !important;
+}
+    
+.section-usphome #slider-container {   
+     display:none !important;         
+}
+    
+body { 
+    min-width: 320px !important;
+}
+    
+#visual-portal-wrapper { 
+    width: 440px !important;
+
+}
+    
+div#logo {
+    margin-left:-450px !important    
+
+}
+
+#header {
+    margin-left:-50px !important;
+    top:10px !important;
+}
+       
+#portal-logo img { 
+    height: auto;
+    width: 150px;
+}
+    
+    /* make width 100% instead of the stock 97.75% */
+    
+div.width-full {
+        width: 100% !important;
+}
+        
+    /* start position-0 at absolute left */
+div.position-0 {
+        margin-left: -100% !important;
+}
+
+    /* get rid of whatever width is set on visual-portal-wrapper so it expands whole device width */
+#visual-portal-wrapper {
+        border: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+}
+        
+p.largeHighlight {
+    box-shadow:none !important;
+    background-image:none !important;
+    margin-left:00px !important;
+    width:240px !important;
+    text-align:center !important;
+  
+     
+}
+
+
+    /* move search box to the center and expand its width */   
+#LSResult {
+
+        }
+
+#portal-column-content {
+    border:none !important;
+    margin-top:-50px !important;
+    width:420px !important;
+
+}   
+
+#portal-searchbox {
+    top:172px !important
+}
+
+  
+.searchform #searchString { 
+    width: 211px; 
+}
+    
+#portal-personaltools {
+       font-size: 70%;
+}
+
+   /* global navigation needs to reconfigure itself to be vertical */
+
+    
+#portal-breadcrumbs {
+        display: none; 
+}
+        
+ /* make the content font-size bigger */
+#content {
+       font-size: 0.9em;
+       border:0px !important;
+} 
+#content h1 { 
+    font-size: 1.4em;
+}
+    
+#content h2 { 
+    font-size: 1.2em;
+}
+    
+div#footer {
+       width: 99%;
+}   
+       
+.portlet-static-about-info {
+    width:440px !important;
+  
+}
+
+.portlet-static-about-info .portletItem {
+    width:400px;
+    
+}
+
+.portlet-static-news-and-announcements {
+    width:430px !important;
+    margin-left:-25px !important
+}
+
+.portlet-collection-news-and-announcements-items {
+    margin-left:-25px !important;
+    width:400px !important;
+}
+
+/* =============================  
+    FOOTER 
+============================= */ 
+#uwo-everywhere img {
+    right:160px !important;
+
+}
+
+       
+       
+} /*  * END 600px and below  * */
+
+/*========================================== 
+                  486px and below 
+========================================== */
+@media screen and (max-width: 486px) {
+    
+#top_level_navigation {
+    min-width:486px !important;
+    
+}
+
+#portal-searchbox {
+    top:195px !important
+}
+    
+div#logo {
+    margin-left: -325px !important;
+
+}
+
+#portal-logo {
+    
+    
+}
+      
+#portal-logo img {
+    display:inline !important;
+    margin-left:auto !important; 
+    margin-right:auto !important ;   
+    }
+    
+#header {
+    display:block;
+    position:static !important;
+    margin-top:90px;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    font-size:1.4em !important;
+    text-align:center !important
+    
+}
+
+.nav-primary {
+    margin-top:30px !important;
+
+}
+
+.section-usphome #collectionBody {
+    width:430px !important;
+    padding:0px !important;
+       
+}
+
+.section-usphome #collectionBody p {
+    padding:0px !important;
+    width:100% !important;
+   
+    
+}
+
+.section-usphome #collectionBody .largeHighlight {
+    margin:0px !important;
+    
+}
+
+.section-usphome #collectionBody p.largeHighlight {
+    padding:10px !important;
+    width:395px !important
+}
+
+
+
+.portlet-static-news-and-announcements {
+    width:430px !important;
+    margin-left:-25px !important
+}
+
+.portlet-collection-news-and-announcements-items {
+    margin-left:-25px !important;
+    width:430px !important;
+}
+      
+#footer {
+
+        width: 380px !important;
+        margin-left:0px !important;
+        
+    }
+    
+#footer-logos {
+
+    text-align: left !important;
+}
+
+#uwo-tagline {
+    margin-top:30px;
+    width:300px
+}
+
+/* =============================  
+    FOOTER 
+============================= */    
+    
+        
+#uwo-everywhere img {
+    right:100px !important;
+
+}
+
+}
+  /*========================================== 
+                  GALAXY TAB 1280
+========================================== */
+ @media (max-device-width: 1280px) and (orientation: landscape) { 
+     
+#top_level_navigation {
+    width:100%!important;
+
+}
+    
+  #portal-logo img {
+  
+      
+  }   
+
+}
+
+
+/*========================================== 
+                  iPAD LANDSCAPE 1024PX
+========================================== */
+
+/*  *iPad in landscape mode * */
+@media screen and (orientation:landscape) and (max-device-width: 1024px) {
+body {
+        font: 1em !important;
+    } 
+
+
+#visual-portal-wrapper {
+     		width: 100% !important;
+     		margin: 0 !important;
+ 	}
+ 	
+ul#topNav {
+    width:100% !important;
+    text-align:center !important;
+
+}
+
+#topNav li {
+   /* border:solid 1px red !important;*/
+    }
+
+#top_level_navigation {
+    font-size:1em !important;
+    text-align:center !important;
+}
+
+
+
+#header {
+       font-size:3em !important;
+     top:50px !important;
+
+    }
+    
+   
+#portal-columns {
+       font-size: 1.7em;
+       }
+
+ul#portal-globalnav {
+    font-size:1.5em !important;
+    text-align:left !important;
+    margin:0px !important;
+}
+
+
+
+#portal-globalnav li {
+    text-align:left !important;
+
+}
+
+
+
+html body #portal-globalnav li:first-child {
+ 
+}
+
+html body #portal-globalnav li a.plain {
+  
+}
+
+
+
+html body #portal-globalnav li a {
+   /* display:inline-block !important;*/
+    padding-top:20px !important;
+    padding-right:20px !important;
+    padding-bottom:20px !important;
+    padding-left:20px !important;
+    text-align:left !important;
+    margin:0px !important;
+    min-width:1em !important;
+
+
+}
+
+/*
+html body #portal-globalnav li a.plain {
+ padding-right:0px !important;   
+}
+*/
+
+.section-usphome .slide-news-content p span{
+    font-size:1em !important;
+
+}
+
+.section-usphome .slide-news-content p {
+    top:0px !important
+}
+
+#uwo-everywhere img {
+    right:190px !important;
+
+}
+     
+
+}
+/*========================================== 
+                  iPAD PORTRAIT 768PX
+========================================== */
+/*  * iPad in portrait mode * */
+@media screen and (orientation:portrait) and  (max-device-width: 768px) {
+   #visual-portal-wrapper {
+ 		width: 100% !important;
+ 		margin: 0 !important;
+ 		
+	}
+	#portal-columns {
+       font-size: 1.7em;
+       }
+    #portal-logo a#logo-site { padding-top: 2%;}
+    
+    
+    
+} /*  * END Pad in landscape mode * */
+
+
+/*========================================== 
+                  iPHONE 480PX
+========================================== */
+/*  * iPhone * */
+@media screen and (orientation:landscape) and (max-device-width: 480px),
+screen and (orientation:portrait) and  (max-device-width: 320px) {
+/** it seems when changing the orientation on the iphone it loses things like globalnav being display block.
+ Have to reset some css that should of been used from before **/
+   
+body { display: inline !important; }
+   /* global navigation needs to reconfigure itself to be vertical */
+   
+#visual-portal-wrapper {
+
+}
+
+.top-navigation-button {
+     height:40px !important;
+     position:relative !important;
+     font-size:2em;
+     margin-left:auto !important;
+     margin-right:auto !important;
+}
+
+#portal-logo {
+	display: inline-block !important;
+	
+        } 
+
+div#logo {
+       position: absolute !important;
+        top: 0px !important;
+        display: inline-block !important;
+        }
+
+#portal-logo {
+       clear: both !important;
+       margin-left:0 !important;
+       display: inline-block;
+       /*width: 80% !important;*/
+       } 
+
+#portal-logo img { 
+    height:auto !important;
+    width:150px !important;
+}  
+
+
+#portal-searchbox { 
+    margin-top: 30px !important; 
+} 
+
+#portal-top {
+    background-color:#fec52e !important
+}
+
+#header {
+    position:static !important;
+    display:block !important;
+    font-size:1.5em !important;
+    text-align:center !important;
+
+    
+}
+
+#portal-column-content {
+    background-color:white !important;
+}
+
+.nav-primary {
+    background-color:white !important;
+    border:solid 1px white !important;
+}
+
+
+                
+ul#portal-globalnav {
+        padding: 0px;
+        background-color: transparent;
+        width: 100% !important;
+
+        }
+        
+ul#portal-globalnav:before { 
+        display: block;
+        margin-top: 40px;
+        font-size: 2em; 
+        }
+        
+#portal-globalnav {
+        height: auto;
+        clear: both;
+        padding: 0px;
+        margin: 7px auto;
+        width: 100% !important;
+        margin-left: 0px !important; 
+        }
+        
+#portal-globalnav li {
+        /*display: inline-block !important; */
+        margin-top: 4px;
+        border-top: 1px solid #E7E7E7;
+        border-bottom: 1px solid #E7E7E7;
+        background-color: white;
+        width: 100%;
+        }
+
+        
+#portal-globalnav li a {
+        padding: 13px 13px 13px 20px;
+        display: block !important;
+        }
+        
+#uwo-everywhere img {
+    right:50px !important;
+
+}
+    
+.field input[type="text"][size] {
+        width: 10em;
+        }       
+
+} 
+
+
+
+@media screen and (orientation:landscape) and  (max-device-width: 568px) {
+     
+ 
+#portal-logo {
+	display: inline-block;
+        } 
+
+div#logo {
+       position: absolute;
+        top: 0px !important;
+        display: inline-block;
+        margin-left:-830px !important 
+        }
+
+#portal-logo {
+       clear: both !important;
+       margin-left:0 !important;
+       display: inline-block;
+       width: 80% !important;
+       } 
+
+#portal-logo img { 
+    height:auto !important;
+    width:150px !important;
+}  
+
+#starLogo {
+    display:none;
+    } 
+
+#portal-globalnav { 
+     display:block !important; 
+   
+}
+
+.nav-menu .nav-primary.expanded #portal-globalnav li {
+width:100% !important;
+margin:0% !important;
+background-color:#f4f4f4 !important; 
+ 
+}
+
+
+.section-usphome .slide-news-content {
+        display:none;       
+    }
+   
+ }
+ 

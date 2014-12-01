@@ -1,0 +1,73 @@
+<div lang="en"
+     xml:lang="en"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:tal="http://xml.zope.org/namespaces/tal"
+     xmlns:metal="http://xml.zope.org/namespaces/metal"
+     xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+     i18n:domain="plone">
+  <fieldset tal:define="all_actions python: view.actions()">
+    <legend i18n:translate="label_searchresults">Call To Actions</legend>
+
+	<!-->	<input tal:condition="python: request.has_key('referer')" type="hidden" name="referer" tal:attributes="value python: request['referer']" />-->
+		<table>
+			<input type="hidden" name="numberofactions" tal:attributes="value python: len(all_actions) + 1" />
+			<tr>
+				<th>Delete?</th>
+				<th>Text that shows up</th>
+				<th>Link it goes to</th>
+				<th>Open link in a new window?</th>
+			</tr>
+		<tal:actions tal:repeat="action all_actions">
+			<tr>
+				<td>
+					<input type="checkbox" tal:attributes="name string:actiondelete-${repeat/action/index};">
+				</td>
+				<td>
+					<textarea tal:attributes="name string:actionname-${repeat/action/index};" cols="40" rows="1" tal:content="python: action[0]">
+					</textarea>
+				</td>
+				<td>
+					<input type="text" tal:attributes="name string:actionlink-${repeat/action/index}; value python: action[1]" size="20" />
+				</td>
+				<td> 
+					<tal:block tal:condition="exists:python:action[2]">
+					<div tal:condition="python:action[2]=='on'">
+					<input type="checkbox" tal:attributes="name string:actionnewwindow-${repeat/action/index}; value python: action[2]; checked default" />	
+					</div>
+					<div tal:condition="python:action[2]=='off'">
+					<input type="checkbox" tal:attributes="name string:actionnewwindow-${repeat/action/index}" />	
+					</div>
+					</tal:block>
+					<tal:block tal:condition="not:exists:python:action[2]">
+					<input type="checkbox" tal:attributes="name string:actionnewwindow-${repeat/action/index}" />
+					</tal:block>
+				</td>
+			</tr>
+		</tal:actions>
+			<tr tal:condition="python: request.has_key('addRow')">
+				<td />
+				<td>
+					<textarea tal:attributes="name python: 'actionname-' + str(len(all_actions))" cols="40" rows="1"></textarea>
+				</td>
+				<td>
+					<input type="text" tal:attributes="name python: 'actionlink-' + str(len(all_actions))" size="20" />
+				</td>
+				<td>
+					<input type="checkbox" tal:attributes="name python: 'actionnewwindow-' + str(len(all_actions))" />
+				</td>
+			</tr>
+		</table>
+<br />
+		<input type="submit"
+			name="updateSelection"
+			value="Remove Selected Call To Actions"
+			/>
+		<input type="submit"
+			name="addRow"
+			value="Add Call To Action"
+		/>
+
+  </fieldset>
+
+
+</div>

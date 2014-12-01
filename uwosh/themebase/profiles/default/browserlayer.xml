@@ -1,0 +1,8 @@
+<layers>
+    <layer name="uwosh.themebase" 
+           interface="uwosh.themebase.browser.interfaces.IUWOshThemeLayer" />
+
+<!-- XXX BAD, YES WE KNOW....  BACKWARDS COMPAT ISSUES -->
+    <layer name="uwosh.theme" 
+           interface="uwosh.theme.browser.interfaces.IUWOshThemeLayer" />
+</layers>

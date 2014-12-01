@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<action-icons xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="uwosh.themebase">
+<!--
+	no longer really need control panel item... maybe can use later
+	
+	
+    <action-icon category="controlpanel"
+             action_id="UWOshThemeConfiguration"
+             title="uwosh theme control panel icon" priority="0"
+             icon_expr="++resource++uwosh-theme-config.png"
+             i18n:attributes="title"/>
+-->
+      <action-icon category="controlpanel"
+	             action_id="UWOshLinkEditor"
+	             title="uwosh link editor" priority="0"
+	             icon_expr="++resource++uwosh-theme-base-config.png"
+	             i18n:attributes="title"/>
+</action-icons>
